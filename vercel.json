@@ -1,16 +1,11 @@
 {
   "version": 2,
-  "name": "product-management",
+  "name": "server",
   "builds": [
-    {
-      "src": "app.js",
-      "use": "@vercel/node"
-    }
+    { "src": "app.js", "use": "@vercel/node" }
   ],
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/app.js"
-    }
+    { "src": "/(.*)", "dest": "app.js" }
   ]
 }
+
