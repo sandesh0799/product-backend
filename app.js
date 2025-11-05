@@ -22,6 +22,9 @@ app.use('/users', userRoutes);
 app.use('/categories', categoryRoutes);
 app.use('/bulk-upload', bulkUploadRoutes);
 app.use('/reports', reportRoutes);
+app.get('/', (req, res) => {
+    res.send('Hello from the server');
+});
 app.listen(PORT, () => {
     console.log(`App Running On ${PORT}`)
 })
